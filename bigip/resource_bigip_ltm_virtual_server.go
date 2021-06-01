@@ -553,7 +553,7 @@ func resourceBigipLtmVirtualServerUpdate(d *schema.ResourceData, meta interface{
 	}
 
 	var security_log_profiles []string
-	if v, ok := d.GetOk("securityLogProfiles"); ok {
+	if v, ok := d.GetOk("security_log_profiles"); ok {
 		security_log_profiles = setToStringSlice(v.(*schema.Set))
 	}
 
