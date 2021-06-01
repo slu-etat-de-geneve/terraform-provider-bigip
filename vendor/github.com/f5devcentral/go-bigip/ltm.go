@@ -572,7 +572,7 @@ type VirtualServer struct {
 	PersistenceProfiles []Profile `json:"persist"`
 	Profiles            []Profile `json:"profiles,omitempty"`
 	Policies            []string  `json:"policies"`
-	SecurityLogProfiles []string  `json:"securityLogProfiles,omitempty"`
+	SecurityLogProfiles []string  `json:"securityLogProfiles"`
 	PerFlowRequestAccessPolicy string `json:"perFlowRequestAccessPolicy,omitempty"`
 }
 
